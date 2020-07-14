@@ -31,7 +31,12 @@ Then select and open ```Lab06-OOPPrinciples.sln```
 #### UML
 ![UML](assets/Lab06UML.png)
 
+### OOP Principles
+#### Inheritance
+- Expresses a Parent/Child relationship between two classes wherein one class can inherit the methods and properties of another. In this code, inheritance is shown by the Concrete Animal classes applying properties from their parent classes as well as using methods defined in the parent classes.
 
+#### Abstraction
+- The act of taking a real world example and breaking it down into fundamental parts or abstracting it to a more basic form. In the code, this is shown by the concrete examples of animals like giraffes being abstracted to herbivores, which is further abstracted to mammals, and even further to animals. 
 
 ---
 
