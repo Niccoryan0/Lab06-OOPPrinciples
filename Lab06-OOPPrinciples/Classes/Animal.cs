@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab06_OOPPrinciples.Classes
 {
-    public class Animal
+    public abstract class Animal
     {
         public int Age { get; set; }
         public string Color { get; set; }
