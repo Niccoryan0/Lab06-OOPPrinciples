@@ -4,9 +4,11 @@ using System.Text;
 
 namespace Lab06_OOPPrinciples.Classes
 {
+
     /// <summary>
     /// Animal Abstract Parent Class 
     /// </summary>
+
     public abstract class Animal
     {
         public int Age { get; set; }
