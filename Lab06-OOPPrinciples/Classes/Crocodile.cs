@@ -20,7 +20,6 @@ namespace Lab06_OOPPrinciples.Classes
             HasKilledPerson = hasKilledPerson;
             NumberOfTeeth = 26;
             Age = age;
-            IsVenomous = false;
             Color = color;
         }
     }

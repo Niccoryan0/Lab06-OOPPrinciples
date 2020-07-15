@@ -23,5 +23,12 @@ namespace Lab06_OOPPrinciples.Classes
             IsVenomous = true;
             Color = color;
         }
+
+        public override string Sleep()
+        {
+            string snakeSleep = base.Sleep() + " and I curl up really tight.";
+            Console.WriteLine(snakeSleep);
+            return snakeSleep;
+        }
     }
 }

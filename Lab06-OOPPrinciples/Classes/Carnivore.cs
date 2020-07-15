@@ -12,6 +12,17 @@ namespace Lab06_OOPPrinciples.Classes
     public abstract class Carnivore : Mammal
     {
         public string FavoriteMeat { get; set; }
-        public bool HasKilledPerson { get; set; }
+        public virtual bool HasKilledPerson { get; set; } = true;
+
+        /// <summary>
+        /// Override method - describes sweat properties of carnivores
+        /// </summary>
+        /// <returns>string setting carnivore sweat type</returns>
+        public override string Sweat()
+        {
+            string sweatString = "Carnivores don't sweat";
+            Console.WriteLine(sweatString);
+            return sweatString;
+        }
     }
 }
