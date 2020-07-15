@@ -100,7 +100,5 @@ namespace XUnitTestZooApp
             Sloth sloth = new Sloth(500, "slow", 10, "grey");
             Assert.Equal(2, sloth.NumberOfLegs);
         }
-
-
     }
 }

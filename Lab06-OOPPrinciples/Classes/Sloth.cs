@@ -24,6 +24,10 @@ namespace Lab06_OOPPrinciples.Classes
             FavoritePlant = "leaves";
         }
 
+        /// <summary>
+        /// Override method - sets Sloth's sweatiness status
+        /// </summary>
+        /// <returns>string returns animal status</returns>
         public override string Sweat()
         {
             string sweatString = "I'm a sloth and we can't sweat";
