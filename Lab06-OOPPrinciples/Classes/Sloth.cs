@@ -20,10 +20,15 @@ namespace Lab06_OOPPrinciples.Classes
             Speed = speed;
             Age = age;
             Color = color;
-            HasFur = true;
             NumberOfLegs = 2;
             FavoritePlant = "leaves";
-            IsGrazer = false;
+        }
+
+        public override string Sweat()
+        {
+            string sweatString = "I'm a sloth and we can't sweat";
+            Console.WriteLine(sweatString);
+            return sweatString;
         }
     }
 }

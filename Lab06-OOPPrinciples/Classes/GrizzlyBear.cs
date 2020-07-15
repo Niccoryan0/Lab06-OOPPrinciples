@@ -19,8 +19,6 @@ namespace Lab06_OOPPrinciples.Classes
             Weight = weight;
             Age = age;
             Color = color;
-            HasFur = true;
-            NumberOfLegs = 4;
             FavoriteMeat = "salmon";
             HasKilledPerson = hasKilledPerson;
         }

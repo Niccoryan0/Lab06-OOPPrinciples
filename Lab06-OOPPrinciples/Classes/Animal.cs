@@ -13,23 +13,19 @@ namespace Lab06_OOPPrinciples.Classes
         public string Color { get; set; }
 
         /// <summary>
-        /// Method - Set animal status: sleeping or awake
+        /// Abstract Method - Describe animal sleep behavior
         /// </summary>
-        /// <param name="isAwake">Is the animal awake?</param>
-        /// <returns>Whether or not the animal is awake</returns>
-        public bool ToggleSleep(bool isAwake)
+        public abstract string Sleep();
+
+        /// <summary>
+        /// Virtual method - Sets all animals breathing status
+        /// </summary>
+        /// <returns>string returns breathing status of all animals</returns>
+        public virtual string Breathe()
         {
-            if (isAwake)
-            {
-                Console.WriteLine("I'm going to sleep");
-                isAwake = false;
-            }
-            else
-            {
-                Console.WriteLine("I'm waking up");
-                isAwake = true;
-            }
-            return isAwake;
+            string breathes = "Breathe in, breathe out";
+            Console.WriteLine(breathes);
+            return breathes;
         }
     }
 }

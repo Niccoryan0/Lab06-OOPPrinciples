@@ -11,18 +11,24 @@ namespace Lab06_OOPPrinciples.Classes
     /// </summary>
     public abstract class Mammal : Animal
     {
-        public bool HasFur { get; set; }
-        public int NumberOfLegs { get; set; }
+        public virtual bool HasFur { get; set; } = true;
+        public virtual int NumberOfLegs { get; set; } = 4;
 
         /// <summary>
         /// Method to describe if the animal can sweat
         /// </summary>
         /// <returns>Sweat string</returns>
-        public string Sweat()
+        public abstract string Sweat();
+
+        /// <summary>
+        /// Override method - describing sleep patterns of mammals
+        /// </summary>
+        /// <returns>string - mammal sleep</returns>
+        public override string Sleep()
         {
-            string sweatString = "I am sweaty";
-            Console.WriteLine(sweatString);
-            return sweatString;
+            string mammalSleep = "I sleep when I'm tired because I'm warm blooded";
+            Console.WriteLine(mammalSleep);
+            return mammalSleep;
         }
     }
 }

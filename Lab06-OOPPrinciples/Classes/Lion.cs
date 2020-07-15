@@ -19,8 +19,6 @@ namespace Lab06_OOPPrinciples.Classes
             PrideSize = prideSize;
             Age = age;
             Color = color;
-            HasFur = true;
-            NumberOfLegs = 4;
             FavoriteMeat = "zebra";
             HasKilledPerson = hasKilledPerson;
         }

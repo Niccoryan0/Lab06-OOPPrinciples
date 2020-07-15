@@ -8,21 +8,27 @@ namespace Lab06_OOPPrinciples.Classes
     /// Concrete Class for Giraffe
     /// Parent - Herbivore
     /// </summary>
-    public class Giraffe : Herbivore
+    public class Horse : Herbivore
     {
-        public int NeckLength { get; set; }
+        public int Speed { get; set; }
         public bool Spots { get; set; }
 
-        public Giraffe(int neckLength, bool spots, int age, string color)
+        public Horse(int speed, bool spots, int age, string color)
         {
-            NeckLength = neckLength;
+            Speed = speed;
             Spots = spots;
             Age = age;
             Color = color;
-            NumberOfLegs = 4;
             HasFur = false;
             FavoritePlant = "grass";
             IsGrazer = true;
+        }
+
+        public sealed override string Sweat()
+        {
+            string sweatString = "I'm a horse and we can sweat";
+            Console.WriteLine(sweatString);
+            return sweatString;
         }
     }
 }

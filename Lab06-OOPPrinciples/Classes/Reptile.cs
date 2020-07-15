@@ -14,6 +14,28 @@ namespace Lab06_OOPPrinciples.Classes
     {
         public int NumberOfTeeth { get; set; }
 
-        public bool IsVenomous { get; set; }
+        public virtual bool IsVenomous { get; set; } = false;
+
+        /// <summary>
+        /// Virtual method - sets reptile basking patterns
+        /// </summary>
+        /// <returns>string describing basking status</returns>
+        public virtual string Bask()
+        {
+            string bask = "Baskin' in the sun";
+            Console.WriteLine(bask);
+            return bask;
+        }
+
+        /// <summary>
+        /// Override method - Set reptile sleep patterns unique
+        /// </summary>
+        /// <returns>sleep patterns of reptiles</returns>
+        public override string Sleep()
+        {
+            string reptileSleep = "I sleep when I'm cold because I'm cold blooded";
+            Console.WriteLine(reptileSleep);
+            return reptileSleep;
+        }
     }
 }

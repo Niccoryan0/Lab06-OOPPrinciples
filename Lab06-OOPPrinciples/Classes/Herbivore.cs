@@ -12,6 +12,6 @@ namespace Lab06_OOPPrinciples.Classes
     public abstract class Herbivore : Mammal
     {
         public string FavoritePlant { get; set; }
-        public bool IsGrazer { get; set; }
+        public virtual bool IsGrazer { get; set; } = false;
     }
 }
